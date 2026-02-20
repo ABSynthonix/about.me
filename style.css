@@ -1,9 +1,9 @@
 :root {
     --bg-color: rgba(0, 0, 0, 0.445);
-    --bg-color-2: rgba(44, 0, 44, 0.333);
-    --border-color1: rgb(48, 0, 26);
+    --bg-color-2: rgba(23, 0, 44, 0.333);
+    --border-color1: rgb(25, 0, 48);
     --highlighted-txt-color: #ff9ae1;
-    --gradient-color: rgb(107, 0, 71);
+    --gradient-color: rgb(64, 0, 107);
     --text-color: #fff;
 }
 
