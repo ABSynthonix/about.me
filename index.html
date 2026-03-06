@@ -2,57 +2,83 @@
 
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me</title>
         <link rel="stylesheet" href="style.css">
-        <audio src="music.mp3" id="MUSIC" loop></audio>
-
-        <meta property="og:title" content="Endie's About Me Page"/>
-        <meta property="og:description" content="Learn more about me :3"/>
-        <meta property="og:image" content="https://absynthonix.github.io/about.me/pfp.png"/>
-        <meta property="og:url" content="https://absynthonix.github.io/about.me/"/>
-        <meta property="og:type" content="website"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="MainContainer" id="MAIN">
-            <img class="PFP" src="pfp.png">
-            <p class="Description">
-                Hi! You can call me Endie.<br><br>
-                My birthday is on October 17th, 2008.<br><br>
-                I practice hobbies like listening to music, playing games and especially programming.<br><br>
-                This page is made by me btw.
-            </p>
-        </div>
-        <div class="SocialsContainer">
-            <a target="_blank" href="https://discord.com/users/1463949201607233659">
-                <div class="SocialElement">
-                <img src="discord_logo.png" class="SocialIMG">
-                <p class="SocialTXT">Discord</p>
+        <h1 id="MainTitle" class="Title">
+            <u>About Me</u>
+        </h1>
+        <section id="BioSection">
+            <div id="BioDiv">
+                <p>
+                    Hello! You can call me Endie!<br>
+                    I'm 17 and I live in Italy.<br>
+                    My interests are:<br>
+                    • Programming;<br>
+                    • Listening to music;<br>
+                    • Playing games.<br>
+                </p>
+                <img id="pfp" src="pfp.png">
+            </div>
+        </section>
+        <section id="InfoSection">
+            <div id="InfoSectionGames" class="InfoSectionDiv">
+                <p>
+                    <u><b>Games I Play:</b></u><br>
+                    • Beat Saber<br>
+                    • Roblox<br>
+                    • Geometry Dash
+                </p>
+            </div>
+            <div id="InfoSectionMusic" class="InfoSectionDiv">
+                <p>
+                    <u><b>Genres I Listen To:</b></u><br>
+                    • J-Core<br>
+                    • Artcore<br>
+                    • Ambient<br>
+                    • Breakcore
+                </p>
+            </div>
+            <div id="InfoSectionCoding" class="InfoSectionDiv">
+                <p>
+                    <u><b>Languages I Code In:</b></u><br>
+                    • Luau<br>
+                    • Java<br>
+                    • Python<br>
+                    • HTML & CSS
+                </p>
+            </div>
+        </section>
+        <h1 id="SocialsTitle" class="Title">
+            <u>Socials</u>
+        </h1>
+        <section id="SocialSection">
+            <a href="https://discord.com/users/1463949201607233659" target="_blank">
+                <div class="SocialSectionDiv">
+                    <p><b>Discord</b></p>
+                    <img src="discord_logo.png" class="SocialIcon">
                 </div>
             </a>
-            <a target="_blank" href="https://www.roblox.com/users/1559040093/profile">
-                <div class="SocialElement">
-                <img src="roblox_logo.jpg" class="SocialIMG">
-                <p class="SocialTXT">Roblox</p>
+            <a href="https://github.com/ABSynthonix" target="_blank">
+                <div class="SocialSectionDiv">
+                    <p><b>GitHub</b></p>
+                    <img src="github_logo.jpg" class="SocialIcon">
+                </div class="SocialSectionDiv">
+            </a>
+            <a href="https://www.roblox.com/users/1559040093/profile" target="_blank">
+                <div class="SocialSectionDiv">
+                    <p><b>Roblox</b></p>
+                    <img src="roblox_logo.jpg" class="SocialIcon">
                 </div>
             </a>
-            <a target="_blank" href="https://github.com/EnderGuyLmao">
-                <div class="SocialElement">
-                <img src="github_logo.jpg" class="SocialIMG">
-                <p class="SocialTXT">GitHub</p>
-                </div>
-            </a>
-        </div>
-        <div class="MusicToggler" id="MusicToggler">
-            <div class="MusicThumb" id="MusicThumb"></div>
-        </div>
-        <a target="_blank" href="https://www.youtube.com/watch?v=MM87r7GjzW8&list=RDMMJoKVeEMRnA8">
-            <p class="NowPlaying">Music: Creo - Flow</p>
-        </a>
-        <div id="RotatingBGCubeHolder">
-            <img id="RotatingBGCube1" src="bg_thing_big.webp">
-            <img id="RotatingBGCube1-1" src="bg_thing_smol.webp">
-        </div>
-        <script src="music_manager.js"></script>
+        </section>
+        <h1 id="PortfolioTitle" class="Title">
+            <u>Portfolio</u>
+        </h1>
+        <section id="PortfolioSection">
+            <p>Under The Works!</p>
+        </section>
     </body>
 </html>
