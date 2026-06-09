@@ -2,17 +2,17 @@ const INFO_DATA = {
     games: {
         id: "InfoSectionGames",
         title: "Games I Play",
-        list: ["Sol's RNG", "Nullscape", "Geometry Dash", "Overall Roblox"]
+        list: ["Geometry Dash", "Sol's RNG", "Nullscape", "EToH"]
     },
     music: {
         id: "InfoSectionMusic",
         title: "Genres I Listen To",
-        list: ["J-Core", "Artcore", "Ambient", "Breakcore"]
+        list: ["J-Core", "Ambient", "Breakcore", "Witch House"]
     },
     code: {
         id: "InfoSectionCoding",
         title: "Languages I Code In",
-        list: ["Luau", "Java", "Python", "HTML & CSS"]
+        list: ["Luau", "Java and C#", "Python", "HTML & CSS"]
     }
 }
 
@@ -53,6 +53,10 @@ function createSocialCard(socialDict) {
     `
 }
 
+function createPortfolioCard(projectsDict) {
+    
+}  
+
 const infoSection = document.getElementById("InfoSection");
 infoSection.innerHTML = Object.values(INFO_DATA)
     .map(info => createInfoCard(info))
@@ -62,3 +66,17 @@ const socialSection = document.getElementById("SocialSection");
 socialSection.innerHTML = Object.values(SOCIALS_DATA)
     .map(social => createSocialCard(social))
     .join('');
+
+const music = document.getElementById("music");
+const button = document.getElementById("MusicPlayer");
+const status = document.getElementById("MusicStatus");
+
+button.addEventListener('click', () => {
+    if (music.paused) {
+        music.play();
+        status.textContent = "Playing: ON";
+    } else {
+        music.pause();
+        status.textContent = "Playing: OFF";
+    }
+});
