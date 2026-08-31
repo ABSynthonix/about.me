@@ -73,7 +73,7 @@ const button = document.getElementById("MusicPlayer");
 const name = document.getElementById("MusicName");
 const status = document.getElementById("MusicStatus");
 
-name.textContent = "pathetic240px\n> SOCIETY <";
+name.textContent = "DIgital Descendant, Key After Key\n> Won't you hear my Symphony? <";
 
 let ctx, src, analyzer;
 
