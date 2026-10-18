@@ -26,7 +26,7 @@ function applyColorsFromImage(imageElement) {
     const palette = colorThief.getPalette(imageElement, colors);
 
     const dominant = `rgb(${palette[0].join(',')})`;
-    const accent = `rgba(${palette[colors - 2].join(',')}, 0.7)`;
+    const accent = `rgba(${palette[colors - 1].join(',')}, 0.7)`;
 
     document.documentElement.style.setProperty('--background-color', dominant);
     document.documentElement.style.setProperty('--div-background-color', accent);
